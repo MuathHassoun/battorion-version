@@ -4,6 +4,18 @@ The latest version brings a rich set of enhancements and new components that imp
 
 ---
 
+## New: Website Link Integration
+
+A direct link to the official Battorion website has been added within the user interface for easier access to information and support.
+
+- **Quick Access to Website:**  
+  A clickable *"Visit Battorion Website"* link now appears in relevant sections of the app, allowing users to open the official site in their default browser.
+
+- **Fallback Clipboard Support:**  
+  If launching the browser fails (e.g., platform limitations), the website URL is automatically copied to the clipboard as a backup.
+
+---
+
 ## New: Battery Graph Settings Panel
 
 A full-featured interface has been added for customizing how battery data is visualized and managed.
@@ -91,6 +103,10 @@ Several issues have been resolved to improve stability and reliability:
 
 - **Wine Installer Support (Linux/macOS):**  
   Added logic to detect and close Battorion processes launched under Wine before executing the silent installer, resolving update conflicts on non-Windows platforms.
+
+- **MiniBrowser Crash After Tray Restore:**  
+  Fixed a bug where restoring the application from the system tray caused the `MiniBrowser` component to crash or behave unexpectedly.  
+  The issue was resolved by properly reinitializing the browser when returning from tray mode.
 
 ---
 Stay tuned for more enhancements in the next updates!
