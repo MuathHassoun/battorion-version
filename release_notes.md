@@ -9,10 +9,31 @@ The latest version brings a rich set of enhancements and new components that imp
 A direct link to the official Battorion website has been added within the user interface for easier access to information and support.
 
 - **Quick Access to Website:**  
-  A clickable *"Visit Battorion Website"* link now appears in relevant sections of the app, allowing users to open the official site in their default browser.
+  A clickable *"Visit Battorion Website"* link now appears in relevant sections of the app,
+  allowing users to open the official site in their default browser.
 
 - **Fallback Clipboard Support:**  
-  If launching the browser fails (e.g., platform limitations), the website URL is automatically copied to the clipboard as a backup.
+  If launching the browser fails (e.g., platform limitations),
+  the website URL is automatically copied to the clipboard as a backup.
+
+---
+
+## New: Battery Report Management Dialog
+
+An interactive dialog has been introduced
+to simplify creating and accessing system battery reports directly from the application.
+
+- **Open or Generate Reports:**  
+  Users can choose to open an existing battery report
+  or create a new one in a single step without manual file navigation.
+
+- **Dynamic Action Labeling:**  
+  The *Create* option automatically switches to *Recreate* if a report file already exists,
+  making it clear when the report will be overwritten.
+
+- **Confirmation Workflow:**  
+  When attempting to open a missing report,
+  the system prompts the user to confirm generating a new one or return to the action selection.
 
 ---
 
@@ -41,6 +62,10 @@ A full-featured interface has been added for customizing how battery data is vis
 - **Save & Load Options**
     - Choose a save format (CSV or JSON).
     - Auto-save based on the number of records.
+
+- **Reset with One Click:**  
+  Clicking the button instantly restores the graph appearance,
+  and chart behavior settings to their default state.
 
 ---
 
@@ -105,7 +130,8 @@ Several issues have been resolved to improve stability and reliability:
   Added logic to detect and close Battorion processes launched under Wine before executing the silent installer, resolving update conflicts on non-Windows platforms.
 
 - **MiniBrowser Crash After Tray Restore:**  
-  Fixed a bug where restoring the application from the system tray caused the `MiniBrowser` component to crash or behave unexpectedly.  
+  Fixed a bug
+  where restoring the application from the system tray caused the `MiniBrowser` component to crash or behave unexpectedly.  
   The issue was resolved by properly reinitializing the browser when returning from tray mode.
 
 ---
