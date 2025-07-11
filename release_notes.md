@@ -4,135 +4,50 @@ The latest version brings a rich set of enhancements and new components that imp
 
 ---
 
-## New: Website Link Integration
+## New: Battery Report Assistant Panel
 
-A direct link to the official Battorion website has been added within the user interface for easier access to information and support.
+A brand-new interactive panel has been introduced to provide a clear,
+intuitive guide for battery report management and interpretation.
 
-- **Quick Access to Website:**  
-  A clickable *"Visit Battorion Website"* link now appears in relevant sections of the app,
-  allowing users to open the official site in their default browser.
+- **Step-by-Step User Guidance:**  
+  The panel visually explains each available action (open, generate, reanalyze)
+  so users can confidently manage battery reports—even without a technical background.
 
-- **Fallback Clipboard Support:**  
-  If launching the browser fails (e.g., platform limitations),
-  the website URL is automatically copied to the clipboard as a backup.
+- **Built-In Glossary of Battery Terms:**  
+  A detailed breakdown of technical metrics is now available,
+  helping users understand terms like *Designed Capacity*,
+  *Battery Wear*, *Cycle Count*, *Charge Level*, *Amperage*, and more.
 
----
+- **Contextual Explanations for Every Label:**  
+  Each label and data field in the battery section now includes a corresponding explanation in this panel,
+  bridging the gap between raw numbers and real-world meaning.
 
-## New: Battery Report Management Dialog
+- **Always Accessible:**  
+  The assistant panel is embedded within the main interface
+  and can be expanded or collapsed as needed—acting as an on-demand help center for battery analysis.
 
-An interactive dialog has been introduced
-to simplify creating and accessing system battery reports directly from the application.
-
-- **Open or Generate Reports:**  
-  Users can choose to open an existing battery report
-  or create a new one in a single step without manual file navigation.
-
-- **Dynamic Action Labeling:**  
-  The *Create* option automatically switches to *Recreate* if a report file already exists,
-  making it clear when the report will be overwritten.
-
-- **Confirmation Workflow:**  
-  When attempting to open a missing report,
-  the system prompts the user to confirm generating a new one or return to the action selection.
+- **User-Friendly Language:**  
+  Wording has been carefully crafted to suit both tech-savvy users and beginners alike,
+  making the battery health system easier to understand and trust.
 
 ---
 
-## New: Battery Graph Settings Panel
+## New: Built-In Feedback System
 
-A full-featured interface has been added for customizing how battery data is visualized and managed.
+A new integrated **Feedback System** has been added to empower users to share their experiences,
+report issues, and suggest improvements directly from within the app.
 
-- **Appearance Settings**
-    - Select visual themes, line color, background, and axis color.
-    - Language support for English and العربية.
+- **One-Click Feedback Submission:**  
+  Users can now quickly submit feedback
+  without leaving the application—just one click to open the form and share thoughts.
 
-- **Chart Settings**
-    - Choose between Line Chart and Area Chart.
-    - Enable or disable data points, tooltips, and grid lines.
-    - Control visibility of X/Y axis labels.
+- **Optional Contact Information:**  
+  Users can choose
+  to leave their email if they'd like follow-up or updates related to their input—fully optional and privacy-friendly.
 
-- **Time & Zoom Settings**
-    - Auto-update graph in real time.
-    - Zoom dynamically into specific regions.
-    - Set minimum and maximum zoom levels.
-
-- **Battery Alerts**
-    - Define an alert threshold by percentage.
-    - Choose a custom color for alert indicators.
-
-- **Save & Load Options**
-    - Choose a save format (CSV or JSON).
-    - Auto-save based on the number of records.
-
-- **Reset with One Click:**  
-  Clicking the button instantly restores the graph appearance,
-  and chart behavior settings to their default state.
-
----
-
-## New: Tray Icon Settings
-
-Enhanced integration with the system tray for a seamless user experience.
-
-- **Start with Tray Window:** Option to launch app minimized to a tray.
-- **Tray Icon Preview:** Real-time visual preview based on the current theme.
-- **About Sections:** Quick access to "About Tray Panel" and "About Tray Integration."
-
----
-
-## New: Update Settings Interface
-
-A centralized section for managing app updates and version control.
-
-- **Auto Update Options**
-    - Check for updates automatically.
-    - Download and install updates in the background.
-    - Optional prompt before applying updates.
-
-- **Version Info & Manual Control**
-    - View current and latest version numbers.
-    - Manually check for updates.
-    - View detailed release notes.
-    - Download updates manually.
-    - Rollback to a previous version (if needed).
-
----
-
-## New: Internal Mini Documentation Browser
-
-A built-in advanced documentation browser has been introduced.
-
-- Allows browsing internal help topics in tabbed format.
-- Topics are listed in a sidebar and opened in dynamic tabs.
-- Supports HTML-based internal and external documents.
-- Includes scroll-to-section functionality and dark/light themes.
-- Full isolation from the main UI for focused reading and help access.
-
----
-
-## Bug Fixes
-
-Several issues have been resolved to improve stability and reliability:
-
-- **Windows Installer Freeze Fix:**  
-  Resolved an issue where the silent installer would hang due to the application still running in the background. The setup process now forcefully closes the running instance before installation to ensure a smooth update.
-
-- **Markdown Loading Issue:**  
-  Fixed a problem where release notes (release_notes.md)
-  failed to load if the app was executed from a compiled `.exe` file.
-  The loader now dynamically determines the executable's path to correctly locate and read the Markdown file.
-
-- **Improved Java Process Termination (Windows):**  
-  Replaced static task kill approach with a PowerShell-based process lookup
-  that accurately identifies and terminates only the Battorion-related Java process,
-  avoiding unintended closures of unrelated Java applications.
-
-- **Wine Installer Support (Linux/macOS):**  
-  Added logic to detect and close Battorion processes launched under Wine before executing the silent installer, resolving update conflicts on non-Windows platforms.
-
-- **MiniBrowser Crash After Tray Restore:**  
-  Fixed a bug
-  where restoring the application from the system tray caused the `MiniBrowser` component to crash or behave unexpectedly.  
-  The issue was resolved by properly reinitializing the browser when returning from tray mode.
+- **Improves Future Updates:**  
+  Feedback collected directly helps shape the future of the application,
+  ensuring user needs and expectations are continuously met.
 
 ---
 Stay tuned for more enhancements in the next updates!
