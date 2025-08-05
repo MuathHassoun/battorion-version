@@ -3,6 +3,11 @@
 
 ---
 
+## 👨‍💻 Author  
+[Muath Hassoun](https://github.com/MuathHassoun) — Computer Engineer and Software Developer
+
+---
+
 ## 🧠 Abstract  
 Battorion is a lightweight, intelligent battery monitoring application designed to help users optimize battery usage, maintain long-term battery health, and avoid sudden power loss. It provides smart alerts and detailed insights, running silently in the background without disturbing the user’s workflow.
 
@@ -12,11 +17,6 @@ Battorion is a lightweight, intelligent battery monitoring application designed 
 Battorion monitors your device’s battery in real-time and notifies you when it reaches critical levels — high or low — so you can take action before damage occurs. It is built with a user-first philosophy, combining powerful functionality with a minimal interface.
 
 Whether you're a casual user, a student, or a developer, Battorion helps you stay in control of your battery health across different operating systems.
-
----
-
-## 👨‍💻 Author  
-[Muath Hassoun](https://github.com/MuathHassoun) — Computer Engineer and Software Developer
 
 ---
 
